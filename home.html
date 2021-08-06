@@ -9,5 +9,51 @@
 <body>
     <a href="course.html">course</a>
     <a href="contact.html">contactus</a>
+    
+    <div>
+        <h2> Registration form</h2>
+        <div>
+            <label>First name</label><input type="text" name="fname" id="fname"/>
+        </div>
+        <div>
+            <label>Last name</label><input type="text" name="lname" id="lname"/>
+        </div>
+        <div>
+            <label>Phone No.</label><input type="number" name="Phone" id="phone"/>
+        </div>
+        <div>
+            <label>Sex -  </label>
+            <input type="radio" name="sex" value="male" id="male"/>male
+            <input type="radio" name="sex" value="female" id="female"/>female
+        </div>
+        <div>
+            <label>Email</label><input type="email" name="email" id="email"/>
+        </div>
+        <div>
+            <label>Password</label><input type="password" name="password" id="password">
+        </div>
+        <div>
+            <form method="POST" action="home.html" enctype="multipart/form-data">
+                upload profile picture
+                <input type="file" name="photo" id="photo">
+            </form>
+            <div id="interset">
+                <label>Interset</label><select name="Interset">
+                    <option value="coding">Coding</option>
+                    <option value="Planing">Planing</option>
+                    <option value="Infrastructure">Infrastructure</option>
+                    <option value="Cloud">Cloud</option>
+                </select>
+            </div>
+            <div id="hobbies">
+                <input type="checkbox" name="hobbies" value="Reading books" checked>Reading Books
+                <input type="checkbox" name="hobbies" value="Listening songs">Listening Songs
+                <input type="checkbox" name="hobbies" value="play video games">Reading Booksplay video games
+        </div>
+        <div>
+            <input type="button" name="submit" value="submit" id="submit"
+        </div>
+    </div>
+
 </body>
 </html>
